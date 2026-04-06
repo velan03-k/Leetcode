@@ -1,0 +1,15 @@
+int minCostToMoveChips(int* position, int positionSize) {
+    int count =0 ;
+    int count1 = 0;
+    for(int i =0; i <positionSize; i++){
+        if(position[i]%2==0)
+        count++;
+        if(position[i]%2!=0)
+        count1++;
+    }
+    if(count > count1)
+    return count1;
+    else
+    return count;
+    return 0;
+}
